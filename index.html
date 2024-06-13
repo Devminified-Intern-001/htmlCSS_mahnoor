@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html/CSS Practice</title>
+    <style>
+      header {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+      }
+      nav {
+        display: flex;
+      }
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+      }
+      li {
+        margin-right: 20px;
+      }
+
+      section {
+        margin-top: 20px;
+      }
+      .article {
+        position: relative;
+
+        margin-bottom: 20px;
+        padding: 10px;
+      }
+      .heading1 {
+        position: absolute;
+        top: -20px;
+        left: 0;
+        background-color: #f00;
+        color: #fff;
+        padding: 5px;
+      }
+      .heading2 {
+        position: fixed;
+        top: 50px;
+        right: 20px;
+        background-color: #00f;
+        color: #fff;
+        padding: 5px;
+      }
+      .heading3 {
+        position: sticky;
+        top: 100px;
+        background-color: #0f0;
+        color: #fff;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="logo">Logo</div>
+      </nav>
+    </header>
+    <div class="container">
+      <section>
+        <article class="article">
+          <h1 class="heading1">Heading 1 (Absolute)</h1>
+          <p>This is article with a relatively absolute positioned heading.</p>
+          <img src="placeholder.png" alt="" srcset="" />
+        </article>
+        <article class="article">
+          <h1 class="heading2">Heading 2 (Fixed)</h1>
+          <p>This article with a fixed positioned heading.</p>
+          <img src="placeholder.png" alt="" srcset="" />
+        </article>
+        <article class="article">
+          <h1 class="heading3">Heading 3 (Sticky)</h1>
+          <p>This article with a sticky positioned heading.</p>
+          <img src="placeholder.png" alt="" srcset="" />
+        </article>
+      </section>
+    </div>
+  </body>
+</html>
